@@ -45,3 +45,16 @@ img {
   border-radius: 15px;
   width: 200px;
 }
+
+@media only screen and (max-width: 430px) {
+  img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
