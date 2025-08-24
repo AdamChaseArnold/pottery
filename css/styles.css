@@ -1,0 +1,47 @@
+body {
+  font-family: calibri, sans-serif;
+  background-color: lightblue;
+  margin: 0px;
+  padding: 0px;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+#header {
+  padding: 15px 0px;
+}
+
+#header > h1 {
+  text-align: center;
+}
+
+#main-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#main-content p {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.card {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+img {
+  border-radius: 15px;
+  width: 200px;
+}
