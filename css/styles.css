@@ -20,7 +20,7 @@ body {
 
 h2 {
   text-align: center;
-  margin: 0;
+  margin: 5px 0px;
 }
 
 #main-content {
@@ -59,18 +59,9 @@ img {
 
 @media only screen and (max-width: 430px) {
   #card-container {
+    display: flex;
     flex-direction: column;
-  }
-
-  .card {
-    margin-bottom: 5px;
-  }
-
-  img {
-    display: block;
-  }
-
-  #main-content {
-    width: 100%;
+    align-items: center;
+    gap: 5px;
   }
 }
