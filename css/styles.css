@@ -59,9 +59,7 @@ img {
 
 @media only screen and (max-width: 430px) {
   #card-container {
-    display: flex;
     flex-direction: column;
-    gap: 5px;
   }
 
   .card {
@@ -70,12 +68,9 @@ img {
 
   img {
     display: block;
-    width: 50%;
-    margin: 0 auto;
   }
 
   #main-content {
     width: 100%;
-    margin: 0 auto;
   }
 }
