@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: calibri, sans-serif;
   background-color: lightblue;
@@ -9,23 +10,24 @@ body {
   flex-direction: column;
 }
 
-.red {
-  border: 1px solid red;
-}
+/* Utility Classes */
+.red { border: 1px solid red; }
+.text-center { text-align: center; }
 
+/* Header Styles */
 #header {
-  padding: 15px 0px;
+  padding: 15px 0;
 }
 
-#header > h1 {
+#header > h1,
+h2,
+#main-content p,
+#email {
   text-align: center;
+  margin: 5px 0;
 }
 
-h2 {
-  text-align: center;
-  margin: 5px 0px;
-}
-
+/* Main Content */
 #main-content {
   width: 80%;
   margin: 0 auto;
@@ -33,14 +35,13 @@ h2 {
   padding-bottom: 20px;
 }
 
-#main-content p {
-  text-align: center;
-}
-
+/* Card Container */
 #card-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 15px; /* Added gap for better spacing */
+  padding: 10px 0;
 }
 
 .card {
@@ -49,36 +50,41 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
+/* Images */
 img {
   border-radius: 15px;
   width: 200px;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below images */
 }
 
+/* Footer */
 #footer {
-  text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   color: #113F67;
   background-color: #58A0C8;
-  border-top: 1px solid #113F67;;
+  border-top: 1px solid #113F67;
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#email {
-  text-align: center;
-  margin-bottom: 10px;
+#footer p {
+  margin: 0;
+  padding: 5px 0;
 }
 
+/* Responsive Design */
 @media only screen and (max-width: 430px) {
-  .card {
-    margin-bottom: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  #main-content {
+    width: 95%; /* Better use of space on small screens */
+  }
+  
+  #card-container {
+    justify-content: center; /* Better centering on mobile */
   }
 }
